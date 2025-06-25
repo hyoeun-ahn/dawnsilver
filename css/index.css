@@ -13,60 +13,124 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-100%);
-  transition: all 0.3s ease;
-  opacity: 0;
+  transition: all 0.2s ease;
   color: var(--black);
 }
 
 header .header-inner{
-  width: 140rem;
+  width: 100%;
+  max-width: 140rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translateY(-2px);
+  transform: translateY(0.2rem);
 }
 header .logo-img{
   width: 4rem;
   transition: 0.3s;
+  transform: translateY(-0.3rem);
 }
 header .logo-img:hover{
-  transform: translateY(-3px);
+  transform: translateY(0);
 }
 header nav{
   display: flex;
   gap: 3rem;
   line-height: 6rem;
+  font-size: 1.4rem;
 }
 header nav .icon{
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 header nav a .bi{
-  font-size: 20px;
+  font-size: 1.8rem;
 }
 header nav a{
   text-align: center;
   transition: 0.25s;
 }
 header nav a:hover{
-  transform: translateY(-3px);
+  transform: translateY(0.3rem);
   color: var(--primaryColor);
 }
+
+header.white-text {
+  color: white;
+}
+header.white-text a,
+header.white-text i {
+  color: white;
+}
+
+
+
 
 .section-title {
   font-size: 3rem;
   font-weight: 600;
+  width: 140rem;
   border-bottom: 1px solid #eee;
-  border: 1px solid #000;
+  margin-bottom: 3rem;
 }
 
-#profile{background-color: aliceblue;}
-#uiux{background-color: rgb(218, 233, 247);}
-#publishing{background-color: rgb(189, 206, 221);}
-#graphic{background-color: rgb(132, 160, 185);}
-
+.profile{
+  background-color: var(--primaryColor);
+}
 
 .intro{
-  background: linear-gradient(to top, #fd7d4e, #eee, #fff);
+  background: linear-gradient(to top, #f36e3d, #fff, #fff);
+}
+
+
+
+
+.items{ 
+	margin:0 auto; 
+	/* width:1000px;   */
+}
+.item{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item h3{
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  padding: 0 1rem;
+}
+.item-img{
+  width: 30rem;
+  height: 25rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.item-img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.item span{
+  width: 30rem;
+  height: 5rem;
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  background-color: #111;
+  color: #fff;
+  transition: 0.3s;
+  line-height: 5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.item :hover .item-img>span{
+  bottom: 0;
+}
+.item :hover .item-img>img{
+  transform: translateY(-1rem);
 }

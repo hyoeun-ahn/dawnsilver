@@ -2,7 +2,7 @@
 :root{
 	--blcak: #333;
 	--gray: #999;
-	--primaryColor: #fd7d4e;
+	--primaryColor: #f36e3d;
 }
 
 *{
@@ -35,14 +35,15 @@ main{
 
 section{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 .container{
-	width: 140rem;
+	width: 100%;
+	max-width: 140rem;
 }
 
 li {
@@ -69,9 +70,24 @@ input, button, textarea{
   border: none;
 }
 
+table{border-collapse:collapse;}
+
+input,select{vertical-align:middle;} 
+
 h1{
-	font-size: 48px;
+	font-size: 4.8rem;
 	font-weight: bold;
 }
 
+
+/* 네비게이터 색상 변경
+라이브서버에서 f12 요소검사 > 색상 적용된곳 복사 */
+/* #fp-nav ul li a span{
+  background-color: #fff;
+} */
+
+/* 풀페이지js 워터마크 숨김 */
+fp-warning, .fp-watermark a{
+  display: none;
+}
 

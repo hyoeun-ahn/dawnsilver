@@ -5,142 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/image/favicon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.36/dist/fullpage.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.36/dist/fullpage.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>dawnsilver</title>
+  <title>안효은 dawnsilver</title>
 </head>
 <body>
   
   <header>
     <div class="header-inner">
-      <a href="#intro">
+      <a href="#">
         <img class="logo-img" src="/image/logo.png" alt="로고이미지">   
       </a>
       <nav>
         <div class="icon">
-          <a href="#intro"><i class="bi bi-house-door-fill"></i></a>
-          <a href="#profile"><i class="bi bi-person-fill"></i></a>
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+          </a>
+          <a href=".profile">
+            <i class="bi bi-person-fill"></i>
+          </a>
         </div>
-        <a href="#uiux">UIUX</a>
-        <a href="#publishing">Publishing</a>
-        <a href="#graphic">Graphic</a>
+        <a href=".publishing">Publishing</a>
+        <a href=".uiux">UIUX</a>
+        <a href=".graphic">Graphic</a>
       </nav>
     </div>
   </header>
 
 
-  <!-- 0623 목업 모달 위치값...오류 -->
-  <main>
-    <div id="fullpage">
-      <section class="intro">
-        <div class="container">
-          인트로
-        </div>
-      </section>
-  
-      <section class="profile">
-        <div class="container">
-          <div class="section-title">
-            Profile
-          </div>
-        </div>
-      </section>
-  
-      <section class="uiux">
-        <div class="container">
-          <div class="section-title">
-            <h2>반응형 모달창</h2>
-          <div class="items">
-            <ul class="item_list">
-              <li>
-                <a href="#none" class="menu">타블렛</a>
-                <div class="modal">
-                  <!--팝업창부분-->
-                  <div class="mockup">
-                    <div class="tab-mockup">
-                      <div class="tab-bd">
-                        <div class="iframe-url">
-                          Insert Image of iframe
-                          <!-- <iframe src="#"></iframe> -->
-                        </div>
-                        <div class="camera">
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="volume">
-                        <span></span>
-                        <span></span>
-                      </div>
-                      <div class="power">
-                        <span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="close">
-                    <i class="material-icons icon">clear</i>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <a href="#none" class="menu">모바일</a>
-                <div class="modal">
-                  <!--팝업창부분-->
-                  <div class="mockup">
-                    <div class="mobile-mockup">
-                      <div class="camera">
-                        <span></span>
-                      </div>
-                      <div class="volume">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                      <div class="power">
-                        <span></span>
-                      </div>
-                      <div class="iframe-url">
-                        <img src="image/mobile.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <p class="close">
-                    <i class="material-icons icon">clear</i>
-                  </p>
-                </div>
-              </li>
-    		    </ul>
-          </div>
-          </div>
-        </div>
-      </section>
-  
-      <section class="publishing">
-        <div class="container">
-          <div class="section-title">
-            Publishing
-          </div>
-        </div>
-      </section>
-  
-      <section class="graphic">
-        <div class="container">
-          <div class="section-title">
-            Graphic
-          </div>
-        </div>
-      </section>
-    </div>
+  <main id="fullpage">
+    <section class="section intro">
+      <div class="container">
+        인트로
+      </div>
+    </section>
 
+    <section class="section profile dark-section">
+      <div class="container">
+        <div class="section-title">profile</div>
+      </div>
+    </section>
+
+    <section class="section publishing">
+      <div class="container">
+        <div class="section-title">
+          Publishing
+        </div>
+      </div>
+    </section>
+
+    <section class="section uiux">
+      <div class="section-title">UIUX</div>
+      <div class="container">
+      </div>
+    </section>
+
+    <section class="section graphic">
+      <div class="container">
+        <div class="section-title">
+          Graphic Design
+        </div>
+        <div class="items">
+          <ul class="item-list">
+            <li class="item">
+              <a href="#none" class="menu">
+                <h3>01</h3>
+                <div class="item-img">
+                  <img src="image/graphic-1.jpg" alt="썸네일">
+                  <span>
+                    이니셜 로고 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
   </main>
 
+  <div class="modal">
+    <div class="viewpage">
+      <img src="image/viewpage/graphic1.png" alt="로고디자인 뷰페이지">
+    </div>
+    <p class="close">
+      <i class="material-icons icon">clear</i>
+    </p>
+  </div>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>  
-  <script src="/js/gsap.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.36/dist/fullpage.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="/js/header.js"></script>
   <script src="/js/modal.js"></script>
+  <script>
+    new fullpage('#fullpage',{
+      autoScrolling:true,
+      navigation:true,
 
+      // 네비게이션 메뉴 보이기
+      anchors: ['intro','profile','publishing','uiux','graphic'],
+      navigationTooltips: ['intro','profile','publishing','uiux','graphic'],
+      showActiveTooltip: true,
+    });
+  </script>
 </body>
 </html>
