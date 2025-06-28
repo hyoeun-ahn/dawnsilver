@@ -35,7 +35,7 @@ main{
 
 section{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -43,7 +43,7 @@ section{
 }
 .container{
 	width: 100%;
-	max-width: 140rem;
+	/* max-width: 140rem; */
 }
 
 li {
@@ -78,16 +78,17 @@ h1{
 	font-size: 4.8rem;
 	font-weight: bold;
 }
-
-
-/* 네비게이터 색상 변경
-라이브서버에서 f12 요소검사 > 색상 적용된곳 복사 */
-/* #fp-nav ul li a span{
-  background-color: #fff;
-} */
-
-/* 풀페이지js 워터마크 숨김 */
-fp-warning, .fp-watermark a{
-  display: none;
+h2{
+	font-size: 3.4rem;
+	font-weight: 600;
 }
+h3{
+	font-size: 2.2rem;
+}
+h4{
+	font-weight: 2rem;
+	font-weight: 600;
+}
+
+
 

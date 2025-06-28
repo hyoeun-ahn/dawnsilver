@@ -34,7 +34,7 @@ body.modal-open {
 }
 .viewpage {
 	height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 	margin: auto;
 	display: flex;
 	align-items: flex-start;
