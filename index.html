@@ -5,142 +5,664 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/image/favicon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.36/dist/fullpage.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>dawnsilver</title>
+  <title>안효은 Portfolio</title>
 </head>
 <body>
   
+  <div class="top">
+    <a href="#"><i class="bi bi-chevron-up"></i></a>
+  </div>
+
   <header>
     <div class="header-inner">
-      <a href="#intro">
+      <a href="#">
         <img class="logo-img" src="/image/logo.png" alt="로고이미지">   
       </a>
       <nav>
         <div class="icon">
-          <a href="#intro"><i class="bi bi-house-door-fill"></i></a>
-          <a href="#profile"><i class="bi bi-person-fill"></i></a>
+          <a href="#">
+            <i class="bi bi-house-door-fill"></i>
+          </a>
+          <a href="#profile">
+            <i class="bi bi-person-fill"></i>
+          </a>
         </div>
-        <a href="#uiux">UIUX</a>
         <a href="#publishing">Publishing</a>
+        <a href="#uiux">UIUX</a>
         <a href="#graphic">Graphic</a>
       </nav>
     </div>
   </header>
 
 
-  <!-- 0623 목업 모달 위치값...오류 -->
   <main>
-    <div id="fullpage">
-      <section class="intro">
-        <div class="container">
-          인트로
-        </div>
-      </section>
-  
-      <section class="profile">
-        <div class="container">
-          <div class="section-title">
-            Profile
-          </div>
-        </div>
-      </section>
-  
-      <section class="uiux">
-        <div class="container">
-          <div class="section-title">
-            <h2>반응형 모달창</h2>
-          <div class="items">
-            <ul class="item_list">
-              <li>
-                <a href="#none" class="menu">타블렛</a>
-                <div class="modal">
-                  <!--팝업창부분-->
-                  <div class="mockup">
-                    <div class="tab-mockup">
-                      <div class="tab-bd">
-                        <div class="iframe-url">
-                          Insert Image of iframe
-                          <!-- <iframe src="#"></iframe> -->
-                        </div>
-                        <div class="camera">
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="volume">
-                        <span></span>
-                        <span></span>
-                      </div>
-                      <div class="power">
-                        <span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="close">
-                    <i class="material-icons icon">clear</i>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <a href="#none" class="menu">모바일</a>
-                <div class="modal">
-                  <!--팝업창부분-->
-                  <div class="mockup">
-                    <div class="mobile-mockup">
-                      <div class="camera">
-                        <span></span>
-                      </div>
-                      <div class="volume">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                      <div class="power">
-                        <span></span>
-                      </div>
-                      <div class="iframe-url">
-                        <img src="image/mobile.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <p class="close">
-                    <i class="material-icons icon">clear</i>
-                  </p>
-                </div>
-              </li>
-    		    </ul>
-          </div>
-          </div>
-        </div>
-      </section>
-  
-      <section class="publishing">
-        <div class="container">
-          <div class="section-title">
-            Publishing
-          </div>
-        </div>
-      </section>
-  
-      <section class="graphic">
-        <div class="container">
-          <div class="section-title">
-            Graphic
-          </div>
-        </div>
-      </section>
-    </div>
+    <section id="intro">
+      <div class="container">
+        
+      </div>
+    </section>
 
+    <section id="profile">
+      <div class="container">
+        <div class="section-title"><h3>About me!</h3></div>
+      </div>
+    </section>
+
+    <section id="publishing">
+      <div class="section-title">
+        <h3>Publishing</h3>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="item-slide">
+              <div class="uiux-left">
+                <div class="uiux-text">
+                  <span>2025.06</span>
+                  <h2>아무튼, 더숲 <br> 모바일 앱</h2>
+                  <div class="uiux-info-wrap">
+                    <div class="uiux-info">
+                      <span>
+                        Team project
+                      </span>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>DURATION</h4>
+                      <p>2 weeks</p>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>TOOL</h4>
+                      <div class="tool">
+                        <img src="image/tool-figma.png" alt="피그마">
+                        <img src="image/tool-html.png" alt="html">
+                        <img src="image/tool-css.png" alt="css">
+                        <img src="image/tool-js.png" alt="js">
+                      </div>
+                    </div>
+                    <div class="uiux-keeword">
+                      <p class="keeword">웹표준 준수</p>
+                      <p class="keeword">리뉴얼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uiux-btn">
+                  <a href="https://hyoeun-ahn.github.io/deosup/" target="_blank">
+                    Go to site
+                  </a>
+                  <a href="https://deosup.com/" target="_blank">
+                    Original
+                  </a>
+                  <a href="none" target="_blank">
+                    Planing
+                  </a>
+                </div>
+              </div>
+              <img class="pb-img" src="image/deosup.png" alt="목업">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-slide">
+              <div class="uiux-left">
+                <div class="uiux-text">
+                  <span>2025.05</span>
+                  <h2>아트허브 <br> 반응형 웹</h2>
+                  <div class="uiux-info-wrap">
+                    <div class="uiux-info">
+                      <span>
+                        Team project
+                      </span>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>DURATION</h4>
+                      <p>4 weeks</p>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>TOOL</h4>
+                      <div class="tool">
+                        <img src="image/tool-figma.png" alt="피그마">
+                        <img src="image/tool-html.png" alt="html">
+                        <img src="image/tool-css.png" alt="css">
+                        <img src="image/tool-js.png" alt="js">
+                      </div>
+                    </div>
+                    <div class="uiux-keeword">
+                      <p class="keeword">웹표준 준수</p>
+                      <p class="keeword">리뉴얼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uiux-btn">
+                  <a href="https://hyoeun-ahn.github.io/arthub/" target="_blank">
+                    Go to site
+                  </a>
+                  <a href="https://arthub.co.kr/sub01/sub00.htm" target="_blank">
+                    Original
+                  </a>
+                  <a href="image/안효은-스토리보드.pdf" target="_blank">
+                    view more
+                  </a>
+                </div>
+              </div>
+              <img class="uiux-img" src="image/arthub.png" alt="목업">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-slide">
+              <div class="uiux-left">
+                <div class="uiux-text">
+                  <span>2025.04</span>
+                  <h2>예바치과교정과의원 <br> 전체페이지</h2>
+                  <div class="uiux-info-wrap">
+                    <div class="uiux-info">
+                      <span>
+                        100% Persona project
+                      </span>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>DURATION</h4>
+                      <p>4 weeks</p>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>TOOL</h4>
+                      <div class="tool">
+                        <img src="image/tool-figma.png" alt="피그마">
+                        <img src="image/tool-ps.png" alt="포토샵">
+                        <img src="image/tool-html.png" alt="html">
+                        <img src="image/tool-css.png" alt="css">
+                        <img src="image/tool-js.png" alt="js">
+                      </div>
+                    </div>
+                    <div class="uiux-keeword">
+                      <p class="keeword">웹표준 준수</p>
+                      <p class="keeword">리뉴얼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uiux-btn">
+                  <a href="https://hyoeun-ahn.github.io/yeba/" target="_blank">
+                    Go to site
+                  </a>
+                  <a href="https://prettymiso.com/" target="_blank">
+                    Original
+                  </a>
+                  <a href="image/안효은-스토리보드.pdf" target="_blank">
+                    Planning
+                  </a>
+                </div>
+              </div>
+              <img class="pb-img" src="image/yeba.png" alt="목업">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-slide">
+              <div class="uiux-left">
+                <div class="uiux-text">
+                  <span>2025.04</span>
+                  <h2>치키차카초코 <br> 메인페이지</h2>
+                  <div class="uiux-info-wrap">
+                    <div class="uiux-info">
+                      <span>
+                        100% Persona project
+                      </span>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>DURATION</h4>
+                      <p>5 days</p>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>TOOL</h4>
+                      <div class="tool">
+                        <img src="image/tool-figma.png" alt="피그마">
+                        <img src="image/tool-ps.png" alt="포토샵">
+                        <img src="image/tool-html.png" alt="html">
+                        <img src="image/tool-css.png" alt="css">
+                        <img src="image/tool-js.png" alt="js">
+                      </div>
+                    </div>
+                    <div class="uiux-keeword">
+                      <p class="keeword">웹표준 준수</p>
+                      <p class="keeword">리뉴얼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uiux-btn">
+                  <a href="https://hyoeun-ahn.github.io/chichacho/" target="_blank">
+                    Go to site
+                  </a>
+                  <a href="https://www.chikichakachoco.com/" target="_blank">
+                    Original
+                  </a>
+                </div>
+              </div>
+              <img class="pb-img" src="image/chichacho.png" alt="목업">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-slide">
+              <div class="uiux-left">
+                <div class="uiux-text">
+                  <span>2025.03</span>
+                  <h2>네추럴발란스 <br> 원페이지</h2>
+                  <div class="uiux-info-wrap">
+                    <div class="uiux-info">
+                      <span>
+                        100% Persona project
+                      </span>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>DURATION</h4>
+                      <p>5 days</p>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>TOOL</h4>
+                      <div class="tool">
+                        <img src="image/tool-figma.png" alt="피그마">
+                        <img src="image/tool-ps.png" alt="피그마">
+                        <img src="image/tool-html.png" alt="피그마">
+                        <img src="image/tool-css.png" alt="피그마">
+                      </div>
+                    </div>
+                    <div class="uiux-keeword">
+                      <p class="keeword">웹표준 준수</p>
+                      <p class="keeword">리뉴얼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uiux-btn">
+                  <a href="https://hyoeun-ahn.github.io/natural/" target="_blank">
+                    Go to site
+                  </a>
+                  <a href="https://m.naturalbalance.co.kr/product/brand01.html?cate_no=54" target="_blank">
+                    Original
+                  </a>
+                </div>
+              </div>
+              <img class="pb-img" src="image/natural.png" alt="목업">
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="uiux">
+      <div class="section-title">
+        <h3>UIUX Design</h3>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="item-slide">
+              <div class="uiux-left">
+                <div class="uiux-text">
+                  <span>2025.02</span>
+                  <h2>상상의 문 <br> 방탈출 모바일 웹</h2>
+                  <div class="uiux-info-wrap">
+                    <div class="uiux-info">
+                      <span>
+                        100% Persona project
+                      </span>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>DURATION</h4>
+                      <p>3 weeks</p>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>TOOL</h4>
+                      <div class="tool">
+                        <img src="image/tool-figma.png" alt="피그마">
+                      </div>
+                    </div>
+                    <div class="uiux-keeword">
+                      <p class="keeword">리뉴얼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uiux-btn">
+                  <a href="#none" target="_blank">
+                    View more
+                  </a>
+                  <a href="https://xn--z92b74ha268d.com/layout/res/home.php?go=main" target="_blank">
+                    Original
+                  </a>
+                  <a href="https://www.figma.com/proto/sdTRMuT60YxJA9WaXxUzRy/%EC%95%88%ED%9A%A8%EC%9D%80-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9B%B9?page-id=1%3A8&node-id=48-3770&p=f&viewport=-221%2C520%2C0.08&t=xkXEVGiApgQrqCpG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=48%3A3770" target="_blank">
+                    Prototype
+                  </a>
+                </div>
+              </div>
+              <img class="uiux-img" src="image/uiux-3.png" alt="목업">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-slide">
+              <div class="uiux-left">
+                <div class="uiux-text">
+                  <span>2025.01</span>
+                  <h2>녹색연합 반응형 웹 <br> 메인페이지</h2>
+                  <div class="uiux-info-wrap">
+                    <div class="uiux-info">
+                      <span>
+                        100% Persona project
+                      </span>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>DURATION</h4>
+                      <p>1 week</p>
+                    </div>
+                    <div class="uiux-info">
+                      <h4>TOOL</h4>
+                      <div class="tool">
+                        <img src="image/tool-figma.png" alt="피그마">
+                      </div>
+                    </div>
+                    <div class="uiux-keeword">
+                      <p class="keeword">아이콘 제작</p>
+                      <p class="keeword">리뉴얼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uiux-btn">
+                  <a href="#none" target="_blank">
+                    View more
+                  </a>
+                  <a href="https://www.greenkorea.org/" target="_blank">
+                    Original
+                  </a>
+                </div>
+              </div>
+              <img class="uiux-img" src="image/uiux-2.png" alt="목업">
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="graphic">
+      <div class="container">
+        <div class="section-title">
+          <h3>Design Artwork</h3>
+          <p>썸네일을 눌러 작업 과정을 자세히 살펴보세요.</p>
+        </div>
+        <div class="items">
+          <ul class="item-list">
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>01</h4>
+                <div class="item-img">
+                  <img src="image/graphic-1.jpg" alt="썸네일">
+                  <span>
+                    이니셜 로고 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>02</h4>
+                <div class="item-img">
+                  <img src="image/graphic-2.jpg" alt="썸네일">
+                  <span>
+                    기묘한 이야기들 독후감 다이어리
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>03</h4>
+                <div class="item-img">
+                  <img src="image/graphic-3.jpg" alt="썸네일">
+                  <span>
+                    환상적인 궁전 포스터
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>04</h4>
+                <div class="item-img">
+                  <img src="image/graphic-4.jpg" alt="썸네일">
+                  <span>
+                    여러 사이즈 이벤트 프로모션 배너
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>05</h4>
+                <div class="item-img">
+                  <img src="image/graphic-5.jpg" alt="썸네일">
+                  <span>
+                    만월회 신제품 홍보 배너
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>06</h4>
+                <div class="item-img">
+                  <img src="image/graphic-6.jpg" alt="썸네일">
+                  <span>
+                    서비스 홍포 포스터
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>07</h4>
+                <div class="item-img">
+                  <img src="image/graphic-7.png" alt="썸네일">
+                  <span>
+                    체육시설 홍포 포스터
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>08</h4>
+                <div class="item-img">
+                  <img src="image/graphic-8-2.png" alt="썸네일">
+                  <span>
+                    영화 포스터 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>09</h4>
+                <div class="item-img">
+                  <img src="image/graphic-9.png" alt="썸네일">
+                  <span>
+                    여성복 오픈이벤트 팝업 배너 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>10</h4>
+                <div class="item-img">
+                  <img src="image/graphic-10.png" alt="썸네일">
+                  <span>
+                    신년맞이 이벤트 팝업 배너 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>11</h4>
+                <div class="item-img">
+                  <img src="image/graphic-11.png" alt="썸네일">
+                  <span>
+                    여름맞이 세일 팝업 배너 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>12</h4>
+                <div class="item-img">
+                  <img src="image/graphic-12.png" alt="썸네일">
+                  <span>
+                    카드뉴스 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>13</h4>
+                <div class="item-img">
+                  <img src="image/graphic-13.png" alt="썸네일">
+                  <span>
+                    영화 포스터 디자인
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#none" class="menu">
+                <h4>14</h4>
+                <div class="item-img">
+                  <img src="image/graphic-14.png" alt="썸네일">
+                  <span>
+                    포스터 개인작업
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <div class="modal">
+    <div class="modal-box">
+      <ul class="modal-content">
+        <li class="viewpage">
+          <img src="image/viewpage/graphic1.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/graphic2.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/graphic3.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/banner1.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/banner2.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/graphic4.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/graphic5.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/poster3.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/popup2.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/popup3.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/popup1.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/cardnews.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/poster2.png" alt="로고디자인 뷰페이지">
+        </li>
+        <li class="viewpage">
+          <img src="image/viewpage/poster1.png" alt="로고디자인 뷰페이지">
+        </li>
+      </ul>
+    </div>
+    <ul class="modal-btn">
+      <li  class="close">
+        <i class="material-icons icon">clear</i>
+      </li>
+      <li class="lr-btn">
+				<p class="pre">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </p>
+				<p class="next">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </p>
+			</li>
+			<li class="page-num">
+        <span>1</span> / <span>10</span>
+      </li>
+    </ul>
+    <div class="scroll">
+      <i class="bi bi-chevron-down"></i>
+      <p>scroll</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="copyright">
+        <span>
+          본 포트폴리오는 100% 직접 제작하였습니다.
+        </span>
+        <p>
+          ⓒ 2025 Hyoeun Ahn All Right Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>  
-  <script src="/js/gsap.js"></script>
-  <script src="/js/modal.js"></script>
-
+  <!-- Jquery -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="js/header.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>
