@@ -20,3 +20,4 @@
     if (darkSection) observer.observe(darkSection);
   });
 
+// class="dark-section" 붙일 시 헤더글자 흰색
