@@ -36,7 +36,7 @@ body.modal-open {
 
 .modal-box {
   width: 90%;
-  max-width: 1000px;
+  max-width: 140rem;
   height: 90vh;
   overflow: hidden;
 	margin: auto;
@@ -66,7 +66,8 @@ body.modal-open {
 	align-items: flex-start;
 }
 .modal .viewpage img {
-  max-width: 100%;
+	width: 100%;
+  max-width: 140rem;
   height: auto;
   display: block;
   margin: auto;
