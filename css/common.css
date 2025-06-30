@@ -2,7 +2,7 @@
 :root{
 	--blcak: #333;
 	--gray: #999;
-	--primaryColor: #238641;
+	--primaryColor: #148b64;
 }
 
 *{
@@ -88,6 +88,10 @@ h3{
 h4{
 	font-weight: 2rem;
 	font-weight: 600;
+}
+h6{
+	font-size: 1.2rem;
+	
 }
 
 

@@ -113,13 +113,13 @@ footer .footer-inner{
 .section-title {
   width: 100%;
   max-width: 110rem;
-  margin: 3rem 0;
   text-align: left;
-  margin: 10rem auto ;
+  margin: 15rem auto 5rem auto ;
 }
 .section-title h3{
   font-size: 2rem;
   font-weight: 600;
+  width: max-content;
 }
 .section-title p{
   color: #666;
@@ -298,6 +298,10 @@ footer .footer-inner{
   display: flex;
   gap: 1.5rem;
   margin-top: 7rem;
+  flex-wrap: wrap;
+}
+.uiux-btn:nth-child(3){
+  margin-top: 1.5rem;
 }
 .uiux-btn a{
   width: 12rem;
@@ -315,6 +319,31 @@ footer .footer-inner{
   /* color: var(--primaryColor); */
   border-color: #555;
   background-color: #fff;
+}
+
+.uiux-btn .mockup{
+  position: relative;
+}
+.uiux-btn .mockup:before{
+  content: "mockup";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eee;
+  width: 6.5rem;
+  height: 2rem;
+  border-radius: 5rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  opacity: 0;
+  transition: 0.3s;
+}
+.uiux-btn .mockup:hover:before{
+  opacity: 1;
 }
 
 
@@ -362,6 +391,7 @@ section#graphic{
   width: 100%;
   height: 100%;
   transition: 0.3s;
+  position: relative;
 }
 .item span{
   width: 30rem;
@@ -378,12 +408,29 @@ section#graphic{
   font-size: 1.4rem;
   font-weight: normal;
 }
+.item-tool{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 20;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+.item-tool img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
 
 .item :hover .item-img>span{
   bottom: 0;
 }
 .item :hover .item-img>img{
   transform: translateY(-1rem);
+}
+.item :hover .item-tool{
+  opacity: 1;
 }
 
 
