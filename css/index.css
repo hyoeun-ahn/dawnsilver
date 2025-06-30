@@ -64,22 +64,69 @@ header.white-text i {
   color: white;
 }
 
+.top{
+  z-index: 500;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  background-color: #333;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.top:hover{
+  background-color: var(--primaryColor);
+}
 
 footer{
   width: 100%;
-  height: 2rem;
-  border: 1px solid #000;
+  height: 20rem;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+footer .footer-inner{
+  max-width: 140rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.copyright span{
+  font-size: 1.5rem;
+}
+.copyright p{
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 
 
 .section-title {
-  font-size: 3rem;
-  font-weight: 600;
   width: 100%;
+  max-width: 110rem;
   margin: 3rem 0;
-  text-align: center;
-  margin-top: 10rem;
+  text-align: left;
+  margin: 10rem auto ;
+}
+.section-title h3{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.section-title p{
+  color: #666;
+  font-size: 1.4rem;  
+  font-weight: 400;
+  font-family: 'Pretendard-Regular'; 
+  margin-top: 1rem;
 }
 
 #profile{
@@ -87,7 +134,7 @@ footer{
 }
 
 #intro{
-  background: linear-gradient(to top, #f36e3d, #fff, #fff);
+  background: linear-gradient(to top, var(--primaryColor), #fff, #fff);
 }
 
 
@@ -100,16 +147,16 @@ footer{
 /* swiper_________________ */
 .swiper {
   width: 100%;
-  height: 80rem;
-  padding-top: 4rem;
+}
+
+.swiper-wrapper{
+  height: inherit;
 }
 
 .swiper-slide {
-  /* background: #444; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
   height: max-content;
 }
 
@@ -117,6 +164,7 @@ footer{
 .swiper {
   margin-left: auto;
   margin-right: auto;
+  height: 70rem;
 }
 
 .swiper-pagination-bullet-active {
@@ -126,8 +174,10 @@ footer{
 }
 
 .swiper-button-next, .swiper-button-prev{
-  color: #eee;
+  color: #bbb;
   transition: 0.2s;
+  margin: 0 10rem;
+
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
@@ -138,24 +188,53 @@ footer{
   display: flex;
   width: 110rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 
 
 /* 퍼블리싱_______________________ */
 .uiux-img{
+  height: 60rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pb-img{
   width: 70rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.full-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 .uiux-info{
   display: flex;
 }
 
+.uiux-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .uiux-text{
   display: flex;
   flex-direction: column;
   width: 38rem;
+
 }
 .uiux-text span{
   font-weight: 500;
@@ -168,13 +247,26 @@ footer{
   flex-direction: column;
   gap: 2rem;
 }
-.uiux-info h4{
-  width: 12rem;
-}
 .uiux-info{
   display: flex;
   align-items: center;
 }
+.uiux-info h4{
+  width: 12rem;
+}
+.uiux-keeword{
+  display: flex;
+  gap: 0.5rem;
+}
+.uiux-keeword .keeword{
+  border: 1px solid #ccc;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 1rem;
+  color: #666;
+  font-family: 'Pretendard-Regular'; 
+}
+
 
 .tool{
   display: flex;
@@ -213,7 +305,7 @@ footer{
   background-color: rgba(255,255,255,0.8);
   border-radius: 0.3rem;
   color: #333;
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
   text-align: center;
   line-height: 4rem;
   transition: 0.3s;
@@ -221,7 +313,7 @@ footer{
 }
 .uiux-btn a:hover{
   /* color: var(--primaryColor); */
-  border-color: var(--black);
+  border-color: #555;
   background-color: #fff;
 }
 
@@ -241,10 +333,11 @@ section#graphic{
 .item-list{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  margin: 0 2rem;
-  gap: 2rem;
-  padding: 1rem 0;
+  margin: 0 auto;
+  gap: 5rem;
+  max-width: 110rem;
 }
 .item{
   width: 30rem;
@@ -260,7 +353,7 @@ section#graphic{
 .item-img{
   width: 30rem;
   height: 25rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
 }
@@ -300,4 +393,5 @@ section#graphic{
 .swiper-pagination-custom, 
 .swiper-pagination-fraction {
     bottom: 10px;
+    width: 100%;
 }
