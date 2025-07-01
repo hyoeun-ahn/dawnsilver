@@ -36,7 +36,7 @@ $(function(){
   });
 
   // 모달 닫기 (슬라이드형)
-  $(".close, .modal").on("click", function(){
+  $(".close").on("click", function(){
     hideModal();
   });
 
