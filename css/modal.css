@@ -89,11 +89,23 @@ body.modal-open {
 	z-index:2000; 
 }
 
+.scroll2{
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.8rem;
+	font-size: 1.2rem;
+	z-index:2000; 
+	position: absolute;
+	left: 0;
+}
+
 @keyframes scroll {
 	70%{transform: translateY(0.5rem);}
 	100%{transform: translateY(0.1rem);}
 }
-.scroll i{
+.scroll i, .scroll2 i{
 	animation: scroll 1s infinite ease-out;
 }
 
@@ -108,9 +120,6 @@ body.modal-open {
 	color:#fff;
 	text-align:center;
 	z-index:2000;
-}
-.modal-box2 .scroll2{
-	border: 1px solid #000;
 }
 
 .close, .close2{ /*닫기*/
