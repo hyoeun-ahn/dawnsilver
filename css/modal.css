@@ -31,8 +31,8 @@ body.modal-open {
 	margin: auto;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10rem);
-	z-index:1000; 
 	overflow: hidden;
+	z-index:1000; 
 }
 
 .modal-box, .modal-box2 {
@@ -152,6 +152,7 @@ body.modal-open {
 	right: 10rem;
 	top:10rem;
 	width:8rem;
+	z-index: 2000;
 }
 .lr-btn i{
 	font-size: 28px;
