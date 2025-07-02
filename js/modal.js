@@ -36,7 +36,7 @@ $(function(){
   });
 
   // 모달 닫기 (슬라이드형)
-  $(".close, .modal").on("click", function(){
+  $(".close").on("click", function(){
     hideModal();
   });
 
@@ -56,7 +56,7 @@ $(function(){
   });
 
 
-  // 단일형 모달 (#modal-global)__________________
+  // 단일형 모달 (#modal-global)_________________________
   $(".open-modal").on("click", function(e){
     e.preventDefault();
     const imgSrc = $(this).data("src");
