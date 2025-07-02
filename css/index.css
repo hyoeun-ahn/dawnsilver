@@ -155,18 +155,19 @@ footer .footer-inner{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
+  flex-direction: row;
+  border: 1px solid red;
 }
 
 .profile-depth{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .profile-info-set{
-  /* border: 1px solid #eee; */
+  border: 1px solid #eee;
   display: flex;
   border-radius: 0.5rem;
   padding: 0 2rem;
@@ -196,6 +197,8 @@ footer .footer-inner{
 }
 .profile-info p{
   font-weight: bold;
+  font-family: 'Pretendard-Regular';
+
 }
 .profile-info2{
   display: flex;
@@ -208,6 +211,7 @@ footer .footer-inner{
 }
 .profile-info2 p {
   font-size: 1.4rem;
+  font-family: 'Pretendard-Regular';
 }
 .profile-info2 p strong{
   font-weight: 600;
@@ -348,6 +352,7 @@ footer .footer-inner{
   gap: 0.5rem;
 }
 .uiux-keeword .keeword{
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5rem;
   font-size: 1.4rem;
@@ -396,7 +401,7 @@ footer .footer-inner{
 .uiux-btn a{
   width: 12rem;
   height: 4rem;
-  background-color: rgba(255,255,255,0.8);
+  background-color: #fff;
   border-radius: 0.3rem;
   color: #333;
   border: 1px solid #ddd;
