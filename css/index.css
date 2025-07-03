@@ -108,7 +108,10 @@ footer .footer-inner{
   margin-top: 1rem;
 }
 
-
+h1{
+  color: #eee;
+  font-size: 8rem;
+}
 
 .section-title {
   width: 100%;
@@ -129,12 +132,26 @@ footer .footer-inner{
   margin-top: 1rem;
 }
 
-#profile{
-  background-color: #fff;
+#intro{
+  background: linear-gradient(to top, var(--primaryColor), #fff, #fff, #fff, #fff);
+  position: relative;
 }
 
-#intro{
-  background: linear-gradient(to top, var(--primaryColor), #fff, #fff);
+#intro img{
+  position: absolute;
+  top: 20%;
+  width: 100rem;
+  transform: rotate(-3deg);
+}
+
+#intro h6{
+  position: absolute;
+  top: 54%;
+  left: 60%;
+  color: var(--primaryColor);
+  transform: rotate(-3deg);
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 
@@ -408,6 +425,10 @@ footer .footer-inner{
   gap: 1.5rem;
   margin-top: 7rem;
   flex-wrap: wrap;
+}
+.uiux-btn button{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 .uiux-btn:nth-child(3){
   margin-top: 1.5rem;
