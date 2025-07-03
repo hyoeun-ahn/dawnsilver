@@ -117,7 +117,7 @@ h1{
   width: 100%;
   max-width: 110rem;
   text-align: left;
-  margin: 15rem auto 5rem auto ;
+  margin: auto ;
 }
 .section-title h3{
   font-size: 2rem;
@@ -317,6 +317,9 @@ h1{
 
 
 /* 퍼블리싱_______________________ */
+#publishing{
+  background-color: #f8f8f8;
+}
 .uiux-img{
   height: 60rem;
   object-fit: cover;
@@ -356,7 +359,7 @@ h1{
   display: flex;
   flex-direction: column;
   width: 38rem;
-
+  margin-top: 3rem;
 }
 .uiux-text span{
   font-weight: 500;
@@ -399,7 +402,7 @@ h1{
   gap: 1rem;
 }
 .tool img{
-  width: 2rem;
+  width: 2.5rem;
   object-fit: cover;
 }
 
@@ -492,6 +495,7 @@ h1{
 /* 그래픽________________________ */
 section#graphic{
   height: max-content;
+  margin-top: 5rem;
 }
 .items{ 
 	margin:0 auto; 
@@ -502,6 +506,7 @@ section#graphic{
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 5rem;
   gap: 5rem;
   max-width: 110rem;
 }
@@ -510,7 +515,6 @@ section#graphic{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 3rem;
 }
 .item h4{
   margin-bottom: 1rem;
@@ -576,6 +580,6 @@ section#graphic{
 .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .swiper-pagination-custom, 
 .swiper-pagination-fraction {
-    bottom: 10px;
+    bottom: 60px;
     width: 100%;
 }
