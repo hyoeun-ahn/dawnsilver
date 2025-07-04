@@ -29,9 +29,8 @@
   }
 
   .profile-wrap {
-    flex-direction: column;
-    align-items: center; 
-    gap: 3rem; 
+    gap: 0; 
+    margin-top: 2rem;
   }
 
   .profile-depth {
@@ -41,6 +40,9 @@
   .profile-1, .profile-2{
     text-align: center;
   }
+  .profile-1{
+    width: 140rem;
+  }
 
   .profile-info{
     width: 30rem;
@@ -48,8 +50,7 @@
   }
   .profile-info2 {
     width: 30rem;
-    flex-direction: column;
-    gap: 0;
+    gap: 1;
     padding: 1rem 2rem;
   }
 
@@ -89,9 +90,21 @@
     max-width: 76.8rem;
   }
 
+  .intro-img{
+    top: 25%;
+  }
+
+
   .top{
     bottom: 3rem;
     right: 3rem;
+  }
+
+  .profile-wrap {
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem; 
+    max-width: 76.8rem;
   }
 
   .skills {
@@ -163,6 +176,11 @@
   section{
     width: 100%;
     height: max-content;
+  }
+  
+  .intro-img{
+    top: 30%;
+
   }
 
   .header-inner{

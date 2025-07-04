@@ -159,7 +159,7 @@ h1{
 }
 
 @keyframes intro {
-  50% {transform: rotate(70deg) translate(2rem, 1rem);}
+  50% {transform: rotate(-70deg) translate(5rem, 5rem);}
   100% {transform: rotate(0) translate(0,0);}
 }
 
