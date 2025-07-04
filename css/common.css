@@ -2,7 +2,7 @@
 :root{
 	--blcak: #333;
 	--gray: #999;
-	--primaryColor: #148b64;
+	--primaryColor: #6198d6;
 }
 
 *{
@@ -42,10 +42,6 @@ section{
 	justify-content: center;
 	padding: 5rem 0;
 }
-.container{
-	width: 100%;
-	/* max-width: 140rem; */
-}
 
 li {
 	list-style: none;
@@ -63,7 +59,7 @@ a{
 	color: inherit;  
 }  
 img{
-	max-width: 100%;
+	width: 100%;
 	vertical-align: top;
 }
 input, button, textarea{
@@ -75,10 +71,6 @@ table{border-collapse:collapse;}
 
 input,select{vertical-align:middle;} 
 
-h1{
-	font-size: 4.8rem;
-	font-weight: bold;
-}
 h2{
 	font-size: 3.4rem;
 	font-weight: 600;
