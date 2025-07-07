@@ -39,19 +39,14 @@ body.modal-open {
   width: 90%;
   max-width: 140rem;
   height: 90vh;
-  overflow: hidden;
 	margin: auto;
+	overflow-y: auto;
 }
 
 .modal-content, .modal-content2 {
   overflow-y: auto;
   max-height: 100%;
-  padding: 2rem;
-}
-
-.modal-content::-webkit-scrollbar,
-.modal-content2::-webkit-scrollbar {
-  display: none;
+  padding: 0;
 }
 
 .modal-content li{
@@ -114,7 +109,7 @@ body.modal-open {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	right: 10rem;
+	right: 7rem;
 	top: 14rem;
 	width: 8rem;
 	color:#fff;
@@ -124,7 +119,7 @@ body.modal-open {
 
 .close, .close2{ /*닫기*/
 	position:fixed; 
-	right:10rem; 
+	right:7rem; 
 	top:3rem; 
 	width: 8rem;
 	text-align: center;
