@@ -38,7 +38,7 @@ body.modal-open {
 .modal-box, .modal-box2 {
   width: 90%;
   max-width: 140rem;
-  height: 90vh;
+  height: 100vh;
 	margin: auto;
 	overflow-y: auto;
 }
